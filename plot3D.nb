@@ -1,0 +1,271 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8851,        261]
+NotebookOptionsPosition[      8016,        229]
+NotebookOutlinePosition[      8360,        244]
+CellTagsIndexPosition[      8317,        241]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"a0", "=", 
+  RowBox[{
+   RowBox[{"-", "7.803"}], "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "1"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"a1", "=", "1"}], "\[IndentingNewLine]", 
+ RowBox[{"a2", "=", 
+  RowBox[{
+   RowBox[{"-", "2.886"}], "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "1"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"a4", "=", 
+  RowBox[{"8.130", "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "3"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"a6", "=", 
+  RowBox[{
+   RowBox[{"-", "2.004"}], "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "4"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"a8", "=", 
+  RowBox[{"3.625", "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "6"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"a10", "=", 
+  RowBox[{
+   RowBox[{"-", "4.969"}], "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "8"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"a12", "=", 
+  RowBox[{"5.339", "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "10"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"a14", "=", 
+  RowBox[{
+   RowBox[{"-", "4.655"}], "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"-", "12"}]}]}]}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{"-", "0.7803`"}]], "Output",
+ CellChangeTimes->{3.764092766953125*^9}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.76409276703125*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", "0.2886`"}]], "Output",
+ CellChangeTimes->{3.76409276709375*^9}],
+
+Cell[BoxData["0.008130000000000002`"], "Output",
+ CellChangeTimes->{3.764092767109375*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", "0.00020040000000000002`"}]], "Output",
+ CellChangeTimes->{3.764092767140625*^9}],
+
+Cell[BoxData["3.625`*^-6"], "Output",
+ CellChangeTimes->{3.76409276715625*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", "4.9690000000000004`*^-8"}]], "Output",
+ CellChangeTimes->{3.764092767171875*^9}],
+
+Cell[BoxData["5.339000000000001`*^-10"], "Output",
+ CellChangeTimes->{3.7640927671875*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", "4.655`*^-12"}]], "Output",
+ CellChangeTimes->{3.764092767234375*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"an", "=", 
+  RowBox[{"Animate", "[", 
+   RowBox[{
+    RowBox[{"Plot3D", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"a0", "+", 
+          RowBox[{"a1", "*", 
+           RowBox[{"Abs", "[", 
+            RowBox[{"x", "/", "t"}], "]"}]}], "+", 
+          RowBox[{"a2", "*", 
+           RowBox[{
+            RowBox[{"Abs", "[", 
+             RowBox[{"x", "/", "t"}], "]"}], "^", "2"}]}], "+", 
+          RowBox[{"a4", "*", 
+           RowBox[{
+            RowBox[{"Abs", "[", 
+             RowBox[{"x", "/", "t"}], "]"}], "^", "4"}]}], "+", 
+          RowBox[{"a6", "*", 
+           RowBox[{
+            RowBox[{"Abs", "[", 
+             RowBox[{"x", "/", "t"}], "]"}], "^", "6"}]}], "+", 
+          RowBox[{"a8", "*", 
+           RowBox[{
+            RowBox[{"Abs", "[", 
+             RowBox[{"x", "/", "t"}], "]"}], "^", "8"}]}], "+", 
+          RowBox[{"a10", "*", 
+           RowBox[{
+            RowBox[{"Abs", "[", 
+             RowBox[{"x", "/", "t"}], "]"}], "^", "10"}]}], "+", 
+          RowBox[{"a12", "*", 
+           RowBox[{
+            RowBox[{"Abs", "[", 
+             RowBox[{"x", "/", "t"}], "]"}], "^", "12"}]}], "+", 
+          RowBox[{"a14", "*", 
+           RowBox[{
+            RowBox[{"Abs", "[", 
+             RowBox[{"x", "/", "t"}], "]"}], "^", "14"}]}]}], ")"}], "*", 
+        "t"}], "-", 
+       RowBox[{"0.3", "*", "t"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "5.3"}], ",", "5.3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+      RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+      RowBox[{"Filling", "\[Rule]", "Bottom"}], ",", 
+      RowBox[{"FillingStyle", "\[Rule]", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Cyan", ",", 
+         RowBox[{"Specularity", "[", 
+          RowBox[{"White", ",", "40"}], "]"}], ",", 
+         RowBox[{"Opacity", "[", "1.7", "]"}]}], "]"}]}], ",", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"LightCyan", ",", 
+         RowBox[{"Specularity", "[", 
+          RowBox[{"White", ",", "40"}], "]"}]}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", "1", ",", "5.5"}], "}"}], ",", 
+    RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 5.3453124999999995`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`t$$], 1, 5.5}}, Typeset`size$$ = {360., {142., 147.}},
+     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$39186$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$39186$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot3D[($CellContext`a0 + $CellContext`a1 
+           Abs[$CellContext`x/$CellContext`t$$] + $CellContext`a2 
+           Abs[$CellContext`x/$CellContext`t$$]^2 + $CellContext`a4 
+           Abs[$CellContext`x/$CellContext`t$$]^4 + $CellContext`a6 
+           Abs[$CellContext`x/$CellContext`t$$]^6 + $CellContext`a8 
+           Abs[$CellContext`x/$CellContext`t$$]^8 + $CellContext`a10 
+           Abs[$CellContext`x/$CellContext`t$$]^10 + $CellContext`a12 
+           Abs[$CellContext`x/$CellContext`t$$]^12 + $CellContext`a14 
+           Abs[$CellContext`x/$CellContext`t$$]^14) $CellContext`t$$ - 
+        0.3 $CellContext`t$$, {$CellContext`x, -5.3, 
+         5.3}, {$CellContext`y, -10, 10}, Mesh -> None, Filling -> Bottom, 
+        FillingStyle -> Directive[Cyan, 
+          Specularity[White, 40], 
+          Opacity[1.7]], PlotStyle -> Directive[LightCyan, 
+          Specularity[White, 40]]], 
+      "Specifications" :> {{$CellContext`t$$, 1, 5.5, AnimationRunning -> 
+         False, AppearanceElements -> {
+          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
+           "DirectionButton"}}}, 
+      "Options" :> {
+       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
+        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
+        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
+     ImageSizeCache->{409., {180., 185.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Animate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.764092773109375*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<B3D.avi\>\"", ",", "an"}], "]"}]], "Input",
+ CellChangeTimes->{{3.764092870546875*^9, 3.76409287871875*^9}}],
+
+Cell[BoxData["\<\"B3D.avi\"\>"], "Output",
+ CellChangeTimes->{3.76409294034375*^9}]
+}, Open  ]]
+},
+WindowSize->{715, 619},
+WindowMargins->{{72, Automatic}, {34, Automatic}},
+FrontEndVersion->"9.0 for Microsoft Windows (32-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1136, 38, 192, "Input"],
+Cell[1718, 62, 93, 2, 31, "Output"],
+Cell[1814, 66, 69, 1, 31, "Output"],
+Cell[1886, 69, 92, 2, 31, "Output"],
+Cell[1981, 73, 90, 1, 31, "Output"],
+Cell[2074, 76, 109, 2, 31, "Output"],
+Cell[2186, 80, 78, 1, 31, "Output"],
+Cell[2267, 83, 109, 2, 31, "Output"],
+Cell[2379, 87, 90, 1, 31, "Output"],
+Cell[2472, 90, 97, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2606, 97, 2360, 64, 212, "Input"],
+Cell[4969, 163, 2746, 52, 382, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7752, 220, 162, 3, 31, "Input"],
+Cell[7917, 225, 83, 1, 63, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
